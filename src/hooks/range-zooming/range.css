@@ -1,0 +1,99 @@
+/* src/components/range.css */
+
+.range-container {
+    position: absolute;
+    bottom: 10%;
+    left: 20px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgb(0, 123, 255, 0.50);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.zoom-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px; 
+    height: 5px;
+    background: rgba(255, 62, 62, 0.8);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.zoom-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.zoom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 0; /* Width and height for triangle */
+    height: 0; /* Width and height for triangle */
+    border-left: 7px solid transparent; /* Left border */
+    border-right: 7px solid transparent; /* Right border */
+    border-bottom: 7px solid rgb(0, 72, 255); /* Bottom border (triangle color) */
+    cursor: pointer;
+    margin-top: 5px; /* Adjust to align with track */
+}
+
+.zoom-slider::-moz-range-track {
+    height: 2px;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.zoom-slider::-moz-range-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 0; /* Width and height for triangle */
+    height: 0; /* Width and height for triangle */
+    border-left: 10px solid transparent; /* Left border */
+    border-right: 10px solid transparent; /* Right border */
+    border-bottom: 10px solid rgb(0, 123, 255); /* Bottom border (triangle color) */
+    cursor: pointer;
+    margin-top: -5px; /* Adjust to align with track */
+}
+
+.zoom-slider::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.zoom-slider:focus {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.zoom-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+    color: whitesmoke;
+    position: relative;
+    margin-bottom: 10px; /* Space for the labels */
+}
+
+.ruler {
+    position: absolute;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-top: -10px; /* Adjust for spacing above slider */
+}
+
+.ruler-line {
+    height: 12px; /* Shortened height for the ruler lines */
+    border-left: 1px solid rgba(245, 245, 245, 0.418); /* Vertical line */
+    flex: 1; /* Each line takes equal space */
+}

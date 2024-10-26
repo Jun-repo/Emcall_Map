@@ -1,0 +1,38 @@
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-auto-rows: minmax(80px, auto);  /* Adjust card height */
+    gap: 5px;
+    padding: 5px; /* Optional: Reduce padding inside the container */
+    margin: 10px; /* Center the container horizontally */
+    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+#cards {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 123, 255, 0.50);
+    opacity: 0.8;
+}
+
+.cardmdrrmo {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.cardpnp {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.cardbfp {
+    grid-column: span 1;
+    grid-row: span 4;
+}
+
+.cardrescue {
+    grid-column: span 1;
+    grid-row: span 4;
+}

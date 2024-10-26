@@ -1,0 +1,87 @@
+/* Navigation Bar */
+.navigationbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4.1%;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(0, 123, 255, 0.5);
+  border-width: 1px 0 0 0;
+}
+
+/* General Columns */
+.nav-column {
+  margin-top: 5px;
+  padding: 0 10px;
+  color: white;
+  position: relative;
+}
+
+/* Column Widths */
+.column-1 {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center items */
+  width: 15%;
+}
+.column-2 {
+  width: 25%;
+}
+.column-3 {
+  width: 25%;
+}
+.column-4 {
+  width: 10%;
+}
+.column-5 {
+  width: 20%;
+  text-align: center;
+}
+.column-6 {
+  width: 5%;
+  text-align: right; /* Align the icon to the right */
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px; /* Add space between the logo and name */
+}
+
+.brand-name {
+  font-size: 14px; /* Adjust the size as needed */
+  color: white;
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+/* Left and Right Text */
+.left-text {
+  text-align: left;
+  font-size: 14px;
+  color: white;
+}
+
+.right-text {
+  text-align: right;
+  font-size: 6px;
+  color: white;
+}
+
+/* Settings Icon Styling */
+.settings-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.settings-icon:hover {
+  transform: rotate(45deg); /* Rotate on hover */
+}
+

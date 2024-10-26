@@ -1,0 +1,26 @@
+/* threeDBuildingToggle.css */
+.three-d-toggle {
+    position: absolute;
+    top: 50%; /* Adjust position */
+    left: 10%; /* Adjust position */
+    z-index: 1000;
+  }
+  
+  .mapboxgl-ctrl-icon {
+    background-color: white; /* Background color for the button */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mapboxgl-ctrl-icon:hover {
+    background-color: #f0f0f0; /* Hover effect */
+  }
+  
+  .mapboxgl-ctrl-icon.active {
+    background-color: #007bff; /* Active state */
+    color: white; /* Icon color when active */
+  }
+
+  
